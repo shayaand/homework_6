@@ -26,13 +26,14 @@ document.querySelector("#mute").addEventListener("click", function() {
 		video.muted = false;
 		document.getElementById('mute').innerHTML = 'Mute';
 		document.querySelector('#volume').innerHTML = document.querySelector("#volumeSlider").value + '%';
-		console.log("Unmuted")
+		console.log("Unmuted");
 	}
 	else {
 		video.muted = true;
-		console.log("Muted")
+		console.log("Muted");
+		document.getElementById('mute').innerHTML = 'Unmute';
 		document.querySelector('#volume').innerHTML = 0+"%";
-		console.log(document.querySelector("#volumeSlider").value/100)
+		console.log(document.querySelector("#volumeSlider").value/100);
 	}
 		
 });
